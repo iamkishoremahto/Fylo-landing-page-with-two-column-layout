@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .link{
+    @apply text-grey font-Raleway text-[16px] font-[500]
+  }
+
+  .footerLinkWrapper{
+    @apply flex flex-col items-start w-full  md:w-[160px] gap-4 justify-start min-h-[150px] 
+
+
+  }
+  .footerLinkWrapper:last-child{
+    @apply flex-row  justify-center md:justify-start
+  }
+
+  .footerLinkWrapper:last-child a{
+    @apply  rounded-full p-2 transition-colors duration-150 ease-in-out ;
+    border:1px solid white;
+  }
+  .footerLinkWrapper:last-child a:hover{
+    border:1px solid hsl(224, 93%, 58%);
+  }
+  .footerLinkWrapper a{
+    @apply text-white transition-colors duration-150 ease-in-out font-Raleway text-[16px] hover:text-BrightBlue
+  }
+}
+
+
+
+
